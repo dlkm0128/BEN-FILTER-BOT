@@ -476,7 +476,7 @@ async def get_shortlink(chat_id, link):
         # if "http" == https: #if https == "http":
         #     https = "https"
         #     link = link.replace("http", https) #replacing http to https
-        # conn = http.client.HTTPSConnection("http://api.shareus.io")
+        # conn = http.client.HTTPSConnection("https://api.shareus.io")
         # payload = json.dumps({
         #   "api_key": "WIndd9MZwUZ4xY6E0PuiYJL2lZk2",
         #   "monetization": True,
