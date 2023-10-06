@@ -48,7 +48,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'SURI')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'adrinolinks.in')
 SHORTLINK_API = environ.get('SHORTLINK_API', '33100521d89df4bbda91995239376895d0727c4c')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
