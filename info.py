@@ -48,7 +48,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'SURI')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', True))
+VERIFY = bool(environ.get('VERIFY', False))
 SHORTLINK_URL = environ.get('SHORTLINK_URL', 'http://api.shareus.io')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'WIndd9MZwUZ4xY6E0PuiYJL2lZk2')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
