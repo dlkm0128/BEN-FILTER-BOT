@@ -478,7 +478,7 @@ async def get_shortlink(chat_id, link):
         #     link = link.replace("http", https) #replacing http to https
         # conn = http.client.HTTPSConnection("api.shareus.io")
         # payload = json.dumps({
-        #   "api_key": "4c1YTBacB6PTuwogBiEIFvZN5TI3",
+        #   "api_key": "WIndd9MZwUZ4xY6E0PuiYJL2lZk2",
         #   "monetization": True,
         #   "destination": link,
         #   "ad_page": 3,
@@ -637,8 +637,8 @@ async def send_all(bot, userid, files, ident, chat_id, user_name, query):
     if 'is_shortlink' in settings.keys():
         ENABLE_SHORTLINK = settings['is_shortlink']
     else:
-        await save_group_settings(message.chat.id, 'is_shortlink', False)
-        ENABLE_SHORTLINK = False
+        await save_group_settings(message.chat.id, 'is_shortlink', True)
+        ENABLE_SHORTLINK =True 
     try:
         if ENABLE_SHORTLINK:
             for file in files:
