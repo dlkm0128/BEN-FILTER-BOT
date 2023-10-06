@@ -989,7 +989,7 @@ async def offshortlink(bot, message):
     else:
         return
     await save_group_settings(grpid, 'is_shortlink', False)
-    # ENABLE_SHORTLINK = False
+    # ENABLE_SHORTLINK = True 
     return await message.reply_text("Successfully disabled shortlink")
     
 @Client.on_message(filters.command("setshortlinkon") & filters.user(ADMINS))
