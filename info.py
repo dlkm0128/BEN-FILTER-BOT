@@ -49,8 +49,8 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'SURI')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'adrinolinks.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '33100521d89df4bbda91995239376895d0727c4c')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'api.shareus.io')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'WIndd9MZwUZ4xY6E0PuiYJL2lZk2')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
